@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upperBar{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: crimson;
+}
+
+.userInfo{
+    margin: auto;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p{
+    border: 3px white solid;
+    border-radius: 100px;
+    padding: 1rem 1.5rem;
+    font-family: 'Quicksand',sans-serif;
+}
+span{
+    border:2px white solid;
+    border-radius: 100px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -9rem;
+    right: 0;
+    color: white;
+    font-family: 'Quicksand',sans-serif;
+}
+
+
+.getInfo{
+    width: 20%;
+    border: 1px red solid;
+    position: absolute;
+    left: 2rem;
+    top: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.getInfo form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label{
+    font-family: 'Quicksand',sans-serif;
+    background-color: red;
+    width: fit-content;
+    padding: .1rem 1rem;
+    color: white;
+    font-weight: 800;
+}
+
+form input{
+    font-family: 'Quicksand',sans-serif;
+    color: red;
+    background-color: white;
+    padding:.5rem 1rem;
+    border-radius: 100px;
+    border: none;
+    border: 1px red solid;
+}
+
+form input[type="submit"]{
+    width: fit-content;
+    margin: auto;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+form input[type="submit"]:hover{
+    background-color: red;
+    color: white;
+    font-weight: 800;
+}
+.gameBoard{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: fit-content;
+    gap: .2rem;
+    background-color: black;
+}
+
+.cell{
+    border: none;
+    background-color: white;
+    width: 7rem;
+    height: 7rem;
+    font-size: 5rem;
+    text-align: center;
+    color: red;
+}
+
+
+.reset{
+    margin-top: 2rem;
+    border: 1px black solid;
+    background-color: white;
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    color: red;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.reset:hover{
+    background-color: red;
+    color: white;
+}
